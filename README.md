@@ -4,7 +4,7 @@ Vulnerable Bash Script – Security Demonstration
 📌 Overview
 -----------
 
-This repository contains a **simple Bash script** that is **intentionally vulnerable** and designed for **educational purposes only**.The goal of this project is to demonstrate **common security vulnerabilities** and explain **why they are dangerous and how they can be fixed**.
+This repository contains a **simple Bash script** that is **intentionally vulnerable** and designed for **educational purposes only**. The goal of this project is to demonstrate **common security vulnerabilities** and explain **why they are dangerous and how they can be fixed**. This script is written in Bash because shell scripts are commonly used in system automation and often become a target of real-world attacks due to poor input handling and insecure practices.
 
 ⚠️ **DISCLAIMER:** This code is **NOT secure** and **MUST NOT** be used in production environments.
 
