@@ -6,12 +6,8 @@ Vulnerable Bash Script – Security Demonstration
 
 This repository contains a **simple Bash script** that is **intentionally vulnerable** and designed for **educational purposes only**.The goal of this project is to demonstrate **common security vulnerabilities** and explain **why they are dangerous and how they can be fixed**.
 
-⚠️ **DISCLAIMER:**This code is **NOT secure** and **MUST NOT** be used in production environments.
+⚠️ **DISCLAIMER:** This code is **NOT secure** and **MUST NOT** be used in production environments.
 
-📂 Repository Structure
------------------------
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   .  ├── vuln_tool.sh  └── README.md   `
 
 📄 Script Description
 ---------------------
@@ -50,7 +46,7 @@ Each vulnerability is explained below.
 
 ### Vulnerable Code
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   API_KEY="sk_test_1234567890"  ADMIN_USER="admin"  ADMIN_PASS="admin123"   `
+` API_KEY="sk_test_1234567890"  ADMIN_USER="admin"  ADMIN_PASS="admin123"  `
 
 ### Explanation
 
@@ -95,7 +91,7 @@ is stored **directly inside the source code**.
 
 ### Vulnerable Code
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   read -p "Enter filename to check size: " filename  ls -lh $filename   `
+`   read -p "Enter filename to check size: " filename  ls -lh $filename   `
 
 ### Explanation
 
@@ -112,7 +108,7 @@ User input is used directly without checking:
 
 Attackers can provide malicious input such as:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   ../../etc/passwd   `
+`   ../../etc/passwd   `
 
 ### Potential Impact
 
@@ -134,8 +130,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 ---------------------
 
 ### Vulnerable Code
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   read -p "Enter directory to list: " dir  cmd="ls $dir"  eval $cmd   `
+`   read -p "Enter directory to list: " dir  cmd="ls $dir"  eval $cmd   `
 
 ### Explanation
 
@@ -145,7 +140,7 @@ User input is executed directly as part of a shell command using eval.
 
 Attackers can inject additional commands:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   ; whoami  ; rm -rf /   `
+`   ; whoami  ; rm -rf /   `
 
 ### Potential Impact
 
@@ -172,7 +167,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 ### Vulnerable Code
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   curl "http://api.example.com/user?id=$user_id&apikey=$API_KEY"   `
+`   curl "http://api.example.com/user?id=$user_id&apikey=$API_KEY"   `
 
 ### Explanation
 
