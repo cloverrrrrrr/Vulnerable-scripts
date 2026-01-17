@@ -41,6 +41,8 @@ This script contains **four (4) security vulnerabilities**:
 
 Each vulnerability is explained below.
 
+
+
 1️⃣ Hardcoded Credentials
 -------------------------
 
@@ -84,6 +86,8 @@ is stored **directly inside the source code**.
 *   Use secret managers or .env files
     
 *   Never commit secrets to source control
+
+
     
 
 2️⃣ Missing Input Validation
@@ -124,8 +128,9 @@ Attackers can provide malicious input such as:
 *   Check file existence before use
     
 *   Reject dangerous characters
-    
 
+
+    
 3️⃣ Command Injection
 ---------------------
 
@@ -161,6 +166,8 @@ Attackers can inject additional commands:
     
 *   Validate input strictly
     
+
+
 
 4️⃣ Insecure API Call
 ---------------------
